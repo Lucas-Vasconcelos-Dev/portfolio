@@ -1,0 +1,31 @@
+.d {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-body {
+    padding-left: 50xp;
+}
+
+.fab {
+    position: center;
+    top: 59%;
+    left: 50%;
+}
+
+
+.fa-brands {
+    position: absolute;
+    top: 49%;
+    left: 59%;
+}
+
+
+.fa-solid {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+}

@@ -13,27 +13,23 @@
 {% endblock %}
 
 {% block 'body' %}
+<!--Navbar-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand abs" href="#">Meu Portfolio</a>
+        <a class="navbar-brand abs" href="{% url 'perfil' %}">Meu Portfolio</a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="collapseNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link autoLayot" href="#">Página inicial</a>
+                    <a class="nav-link autoLayot" href="{% url 'perfil' %}">Página inicial</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse">Skills</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="" data-bs-target="#myModal" data-bs-toggle="modal">Projetos | Fotos</a>
+                    <a class="nav-link" href="{% url 'projetos' %}" data-bs-toggle="collapse">Projetos | Fotos</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +38,7 @@
 
 <!-- foto perfil -->
 <section class="py-5 text-center container">
-    <img id="foto_perfil" src="https://i.ibb.co/JQJxFjd/quadrado.png" alt="quadrado">
+    <img id="foto_perfil" src="https://i.ibb.co/9wv9QSm/quadrado.png" alt="quadrado">
     <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">
@@ -56,7 +52,7 @@
                 </font>
             </p>
             <p>
-                <a href="#" class="btn btn-dark my-2">
+                <a href="{% url 'contato' %}" class="btn btn-dark my-2">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Contato</font>
                     </font>
@@ -79,15 +75,15 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <!--tamanho da tambi-->
-            <div class="col-md-6">  
+            <div class="col-md-6">
                 <div class="card shadow-sm">
                     <!--Imagem da tambi-->
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                        preserveAspectRatio="xMidYMid slice" focusable="false"> 
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">Thumbnail</text>
+                            dy=".3em">Foto</text>
                     </svg>
 
                     <div class="card-body">
@@ -101,7 +97,8 @@
                         </ul>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-success">Ver Projetor</button>
+                                <a href=""><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                        Projetor</button></a>
                                 <button type="button" class="btn btn-sm btn-outline-primary">Código</button>
                             </div>
                         </div>
